@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  bucket_storage:
+    build: .
+    privileged: true
+    env_file:
+      - .env
+    ports:
+      # smb
+      - "139:139"
+      - "445:445"
+      # HTTP
+      - "8181:80"

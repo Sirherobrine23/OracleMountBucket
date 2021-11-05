@@ -1,0 +1,10 @@
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  root /mnt/s3;
+  index index.html;
+  server_name _;
+  location / {
+    autoindex on;
+  }
+}
