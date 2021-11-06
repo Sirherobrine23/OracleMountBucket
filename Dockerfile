@@ -18,7 +18,8 @@ ENV \
   S3_BUCKET="" \
   S3_TENACID="" \
   S3_REGION="" \
-  Samba_Password="samba123"
+  Samba_Password="samba123" \
+  Samba_Username="root"
 
 COPY ./root_folder/ /
 RUN chmod a+x /start.sh
